@@ -35,14 +35,14 @@
         <br>
         <button onclick="showPage('page4')">Next</button>
     </div>
-<!-- Page 3.5: Birthday Cake -->
+<!-- Page 3.5: Birthday Cake Interaction -->
 <div id="page3-5" class="page" style="display:none;">
     <h2>Make a Wish! 🎂</h2>
-    <div id="cake" onclick="blowOutCandles()">
-        <span id="flame">🔥</span>
-        <div class="cake-base"></div>
-    </div>
-    <p id="wish-text">Tap the flame to blow it out!</p>
+    
+    <!-- This image changes when clicked -->
+    <img id="cakeImage" src="assets/cake-lit.png" alt="Birthday Cake" style="width:100%; max-width:300px; cursor:pointer;" onclick="blowCandles()">
+    
+    <p id="wish-text">Tap the cake to blow it out!</p>
     <button onclick="showPage('page4')">Next</button>
 </div>
     <!-- Page 4: Message -->
