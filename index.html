@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 20th Birthday, Sophia!</title>
-    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,27 +34,24 @@
         <br>
         <button onclick="showPage('page4')">Next</button>
     </div>
-<!-- Page 3.5: Birthday Cake Interaction -->
-<div id="page3-5" class="page" style="display:none;">
-    <h2>Make a Wish! 🎂</h2>
-    
-    <!-- This image changes when clicked -->
-    <img id="cakeImage" src="assets/cake-lit.png" alt="Birthday Cake" style="width:100%; max-width:300px; cursor:pointer;" onclick="blowCandles()">
-    
-    <p id="wish-text">Tap the cake to blow it out!</p>
-    <button onclick="showPage('page4')">Next</button>
-</div>
-    <!-- Page 4: Message -->
+
+    <!-- Page 4: Birthday Cake -->
     <div id="page4" class="page" style="display:none;">
+        <h2>Make a Wish! 🎂</h2>
+        <img id="cakeImage" src="assets/cake-lit.png" alt="Birthday Cake" style="width:100%; max-width:300px; cursor:pointer;" onclick="blowCandles()">
+        <p id="wish-text">Tap the cake to blow it out!</p>
+        <button onclick="showPage('page5')">Next</button>
+    </div>
+
+    <!-- Page 5: Message -->
+    <div id="page5" class="page" style="display:none;">
         <h2>To my dearest Sophia,</h2>
         <p>Happy 20th birthday! Wishing you the most amazing year ahead as you enter this new decade. You deserve all the happiness in the world.</p>
-        <!-- Confetti Trigger -->
         <button onclick="triggerConfetti()">Celebrate!</button>
     </div>
 
-    <!-- Link to your JavaScript logic -->
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <!-- Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </body>
 </html>
