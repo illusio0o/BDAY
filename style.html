@@ -1,31 +1,19 @@
 /* style.css */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
-    text-align: center;
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); /* Soft Pink Palette */
+    color: #880e4f; /* Darker pink for text */
 }
 
 .page {
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 400px;
+    border: 2px solid #f06292;
+    border-radius: 25px; /* Softer, rounder corners */
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ff4757;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    background-color: #ec407a;
+    transition: transform 0.2s; /* Adds a nice hover effect */
+}
+
+button:hover {
+    transform: scale(1.05);
 }

@@ -8,11 +8,12 @@
 </head>
 <body>
 
-    <!-- Page 1: Landing -->
-    <div id="page1" class="page">
-        <h1>Happy Birthday!</h1>
-        <button onclick="showPage('page2')">Click to Start</button>
-    </div>
+   <!-- Page 1: Landing -->
+<div id="page1" class="page">
+    <h1>Happy 20th Birthday, Sophia! ✨</h1>
+    <p>Welcome to your special day.</p>
+    <button onclick="showPage('page2')">Click to Open</button>
+</div>
 
     <!-- Page 2: Video -->
     <div id="page2" class="page" style="display:none;">
@@ -27,18 +28,18 @@
     <div id="page3" class="page" style="display:none;">
         <h2>The Song</h2>
         <audio controls>
-            <source src="assets/SUP.WAV" type="audio/mpeg">
+            <source src="assets/SUP.mp3" type="audio/mpeg">
         </audio>
         <br>
         <button onclick="showPage('page4')">Next</button>
     </div>
 
     <!-- Page 4: Message -->
-    <div id="page4" class="page" style="display:none;">
-        <h2>A Message for You</h2>
-        <p>Your heartfelt birthday message goes here.</p>
-    </div>
-
-    <script src="script.js"></script>
+<div id="page4" class="page" style="display:none;">
+    <h2>To my dearest Sophia,</h2>
+    <p>Happy 20th birthday! Wishing you the most amazing year ahead as you enter this new decade. You deserve all the happiness in the world.</p>
+    <!-- Confetti Trigger -->
+    <button onclick="triggerConfetti()">Celebrate!</button>
+</div>
 </body>
 </html>
