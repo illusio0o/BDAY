@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Page 1: Landing -->
+    <div id="page1" class="page">
+        <h1>Happy Birthday!</h1>
+        <button onclick="showPage('page2')">Click to Start</button>
+    </div>
+
+    <!-- Page 2: Video -->
+    <div id="page2" class="page" style="display:none;">
+        <h2>The Video</h2>
+        <video controls width="300">
+            <source src="assets/soya.mp4" type="video/mp4">
+        </video>
+        <button onclick="showPage('page3')">Next</button>
+    </div>
+
+    <!-- Page 3: Music -->
+    <div id="page3" class="page" style="display:none;">
+        <h2>The Song</h2>
+        <audio controls>
+            <source src="assets/SUP.WAV" type="audio/mpeg">
+        </audio>
+        <br>
+        <button onclick="showPage('page4')">Next</button>
+    </div>
+
+    <!-- Page 4: Message -->
+    <div id="page4" class="page" style="display:none;">
+        <h2>A Message for You</h2>
+        <p>Your heartfelt birthday message goes here.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
