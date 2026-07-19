@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>Happy 20th Birthday, Sophia!</title>
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-   <!-- Page 1: Landing -->
-<div id="page1" class="page">
-    <h1>Happy 20th Birthday, Sophia! ✨</h1>
-    <p>Welcome to your special day.</p>
-    <button onclick="showPage('page2')">Click to Open</button>
-</div>
+    <!-- Page 1: Landing -->
+    <div id="page1" class="page">
+        <h1>Happy 20th Birthday, Sophia! ✨</h1>
+        <p>Welcome to your special day.</p>
+        <button onclick="showPage('page2')">Click to Open</button>
+    </div>
 
     <!-- Page 2: Video -->
     <div id="page2" class="page" style="display:none;">
@@ -21,6 +22,7 @@
         <video controls width="300">
             <source src="assets/soya.mp4" type="video/mp4">
         </video>
+        <br>
         <button onclick="showPage('page3')">Next</button>
     </div>
 
@@ -35,11 +37,16 @@
     </div>
 
     <!-- Page 4: Message -->
-<div id="page4" class="page" style="display:none;">
-    <h2>To my dearest Sophia,</h2>
-    <p>Happy 20th birthday! Wishing you the most amazing year ahead as you enter this new decade. You deserve all the happiness in the world.</p>
-    <!-- Confetti Trigger -->
-    <button onclick="triggerConfetti()">Celebrate!</button>
-</div>
+    <div id="page4" class="page" style="display:none;">
+        <h2>To my dearest Sophia,</h2>
+        <p>Happy 20th birthday! Wishing you the most amazing year ahead as you enter this new decade. You deserve all the happiness in the world.</p>
+        <!-- Confetti Trigger -->
+        <button onclick="triggerConfetti()">Celebrate!</button>
+    </div>
+
+    <!-- Link to your JavaScript logic -->
+    <script src="script.js"></script>
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </body>
 </html>
