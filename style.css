@@ -1,0 +1,67 @@
+/* style.css */
+
+/* General mobile-first setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    /* Elegant Pink Gradient */
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    color: #880e4f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Subtle frosted-glass feel */
+    border: 2px solid #f06292;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(240, 98, 146, 0.2); /* Soft glow shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Typography decorations */
+h1, h2 {
+    color: #ad1457;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Button styling for touchscreens */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #d81b60;
+}
+
+/* Ensure media fits the card */
+video, audio {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
